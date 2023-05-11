@@ -1,10 +1,10 @@
 # Darna
-##DARNA Health Intent v1.0- An open source intiative
+##DARNA Healthy Intent v1.0- An open source intiative - self custody of your health data
 ##feel free to contribute
 
 What is this project?
 ======================
-Darn the US health system! 
+Darn the siloed health system!! 
 This project is an open-source software that helps you store your health data that is currently saved in different places like electronic health records, fitness apps, and wearable devices. 
 
 With this software, you can bring all your health data together in one place on your computer at home. When you visit a new doctor, you can choose to share your health data with them on demand through email, link etc. This way, you have full custody of your health data and can decide who to share it with.
@@ -73,4 +73,8 @@ b) If you have data on EPIC MyChart or your doctors gateway, login and go to Men
  
 c) Scan PDF's: On nextcloud, choose the '+' menu in the lower center and make scanned pdf's of your health documents and save to the Health_server
 
+ ##Why nextcloud and not any cloud
+ =================================
+ Nextcloud allows you to store your data on your computer even if you were remote. Technically any cloud works but that is your choice. Im tired of others reselling my data.
+ 
 ## Help needed for android nextcloud app setup, downloads and PDF scans
