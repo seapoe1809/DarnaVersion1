@@ -36,10 +36,7 @@ Please note that this is only the first version of the project, and I plan on ad
 step 1: Install and configure nextcloud
 =======================================
 
-a) Make sure you have docker. If not:
-$curl -fsSL https://get.docker.com -o get-docker.sh
-$sh get-docker.sh
-#go to their repo to get more information
+a) Make sure you have docker. If not go to docker.com; get a free acct and then install
 
 b) On terminal run:
  $sudo docker run --sig-proxy=false --name nextcloud-aio-mastercontainer --restart always --publish 80:80 --publish 8080:8080 --publish 8443:8443 --volume nextcloud_aio_mastercontainer:/mnt/docker-aio-config --volume /var/run/docker.sock:/var/run/docker.sock:ro --env NEXTCLOUD_DATADIR="/home/darnahi/" nextcloud/all-in-one:latest
@@ -62,6 +59,16 @@ h) Launch your desktop app at https://<your sub domain> and enter your username 
 i) download your nextcloud app and enter your 'https://<your sub domain>' which will prompt for password and then you should be done.
  
 j) make a folder called 'Health_server'
+  
+     For users who wish to use Python to launch and install nextcloud:
+     =================================================================
+     a) git clone the repo
+ 
+     b) in Terminal, cd into repo and $pip install requirements.txt
+ 
+     c) in Terminal, in dir of repo $sudo python3 setup_darna.py
+        That should take you to step C as above
+    
 
 
 Step 2: Download your health data in nextcloud from iphone
