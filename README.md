@@ -62,6 +62,7 @@ j) make a folder called 'Health_server'
 
 
 Step 2: Download your health data in nextcloud from iphone
+=========================================================
 
 a) On apple health app, click the profile icon, then choose "Export All Health Data" and save the zip file in nextcloud to 'Health_server'.
 b) If you have data on EPIC MyChart or your doctors gateway, login and go to Menu, search 'sharing' or 'export', click 'yourself' and download a zip file to 'Health_server'.
