@@ -56,8 +56,11 @@ e) If you do buy one, login to your domain management account and go to DNS sect
 f) It should then take you to next page where you choose the modules you need. I would suggest choosing all except 'talk' module.
   
 g) It should take almost 10 min to get it up and running, and finally will give you a username and password. eg. "admin" "asdnilsdfvblidfsvblisd98yy89y08ykjn".
+ 
 h) Launch your desktop app at https://<your sub domain> and enter your username and pwd.
+ 
 i) download your nextcloud app and enter your 'https://<your sub domain>' which will prompt for password and then you should be done.
+ 
 j) make a folder called 'Health_server'
 
 
@@ -65,7 +68,9 @@ Step 2: Download your health data in nextcloud from iphone
 =========================================================
 
 a) On apple health app, click the profile icon, then choose "Export All Health Data" and save the zip file in nextcloud to 'Health_server'.
+ 
 b) If you have data on EPIC MyChart or your doctors gateway, login and go to Menu, search 'sharing' or 'export', click 'yourself' and download a zip file to 'Health_server'.
+ 
 c) Scan PDF's: On nextcloud, choose the '+' menu in the lower center and make scanned pdf's of your health documents and save to the Health_server
 
 ## Help needed for android nextcloud app setup, downloads and PDF scans
