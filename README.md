@@ -39,15 +39,20 @@ step 1: Install and configure nextcloud
 
 a) Make sure you have docker and python3. If not go to docker.com and python3; get a free acct and then install. Once done do the following:
  Install Git and git clone Darna repo:
-           $sudo apt-get install git
-           $git clone https://github.com/seapoe1809/Darna
-           $cd Darna
-           $python3 setup_darna.py
+ 
+ 
+              $sudo apt-get install git
+              $git clone https://github.com/seapoe1809/Darna
+              $cd Darna
+              $pip install requirements.txt
+              $python3 setup_darna.py
         
-That should take you to step c as above
 
-b) Subsequently on terminal run:
-           $sudo docker run --sig-proxy=false --name nextcloud-aio-mastercontainer --restart always --publish 80:80 --publish 8080:8080 --publish 8443:8443 --volume nextcloud_aio_mastercontainer:/mnt/docker-aio-config --volume /var/run/docker.sock:/var/run/docker.sock:ro --env NEXTCLOUD_DATADIR="/home/darnahi/" nextcloud/all-in-one:latest
+That should take you to step c as below
+
+b) Subsequently on terminal you could run if you prefer. The step above should automatically do this for you:
+
+             $sudo docker run --sig-proxy=false --name nextcloud-aio-mastercontainer --restart always --publish 80:80 --publish 8080:8080 --publish 8443:8443 --volume nextcloud_aio_mastercontainer:/mnt/docker-aio-config --volume /var/run/docker.sock:/var/run/docker.sock:ro --env NEXTCLOUD_DATADIR="/home/darnahi/" nextcloud/all-in-one:latest
  
  ##This starts docker containers  and also creates a folder data on your computer /home/darnahi/ that will serve as your external drive to store your files
  ##Important: If umbrel is running, the ports conflict. So ideal would be to use the native nextcloud app on umbrel
@@ -81,14 +86,15 @@ c) Scan PDF's: On nextcloud, choose the '+' menu in the lower center and make sc
  =================================
  Nextcloud allows you to store your data on your computer even if you were remote. Technically any cloud works but that is your choice. Im tired of others reselling my data.
  
+ 
+ 
  Step 3: Sync files to your health server.
  =========================================
  Goto your home folder and enter the following python3 commands:
-      $cd Darna
-     
-      $pip install requirements.txt
- 
-      $python3 syncmyfiles.py
+        
+                 $cd Darna
+               
+                 $python3 syncmyfiles.py
        
  
  This step should lead to unzipping and setting you up with files in your health server. Followed by creating an encrypted backup in Darna folder.
