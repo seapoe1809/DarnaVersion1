@@ -21,13 +21,14 @@ This program is distributed in the hope that it will be useful, but WITHOUT ANY 
 
 What are some modules that are needed?
 =======================================
-#linux os (any distro as long as docker runs; mac and windows based will be much later)
+#linux os (any distro as long as docker runs)
+#git
 #docker
-#python
+#python3
 
-For my project, I decided to make ver1 of the software only for Linux users. The first step is to install Nextcloud, which is a versatile self-cloud management tool that is open source, which I am passionate about.
+For my project, I decided to make the software only for Linux users. The first step is to install Nextcloud, which is a versatile self-cloud management tool that is open source, which I am passionate about.
 
-Once installed, the drive becomes your self hosted cloud drive at home, meaning you can store your data on it and access it from anywhere. I chose Nextcloud because it has built-in security features, and it already has apps available for iOS, Android, and desktop.
+Once installed, the drive becomes your self hosted cloud drive at home, meaning you can store your data on it and access it from anywhere with no other 3rd party involved. I chose Nextcloud because it has built-in security features, and it already has apps available for iOS, Android, and desktop and allows you to use your computer to be the cloud.
 
 To make things even easier, I used Python for some automation to move files on your computer, create encrypted backups, and create some basic visualizations of your health data. This way, you can easily manage your health data, keep it secure, and view it in a way that makes sense to you.
 
@@ -36,13 +37,20 @@ Please note that this is only the first version of the project, and I plan on ad
 step 1: Install and configure nextcloud
 =======================================
 
-a) Make sure you have docker. If not go to docker.com; get a free acct and then install
+a) Make sure you have docker and python3. If not go to docker.com and python3; get a free acct and then install. Once done do the following:
+ Install Git and git clone Darna repo:
+           $sudo apt-get install git
+           $git clone https://github.com/seapoe1809/Darna
+           $cd Darna
+           $python3 setup_darna.py
+        
+That should take you to step c as above
 
-b) On terminal run:
- $sudo docker run --sig-proxy=false --name nextcloud-aio-mastercontainer --restart always --publish 80:80 --publish 8080:8080 --publish 8443:8443 --volume nextcloud_aio_mastercontainer:/mnt/docker-aio-config --volume /var/run/docker.sock:/var/run/docker.sock:ro --env NEXTCLOUD_DATADIR="/home/darnahi/" nextcloud/all-in-one:latest
+b) Subsequently on terminal run:
+           $sudo docker run --sig-proxy=false --name nextcloud-aio-mastercontainer --restart always --publish 80:80 --publish 8080:8080 --publish 8443:8443 --volume nextcloud_aio_mastercontainer:/mnt/docker-aio-config --volume /var/run/docker.sock:/var/run/docker.sock:ro --env NEXTCLOUD_DATADIR="/home/darnahi/" nextcloud/all-in-one:latest
  
  ##This starts docker containers  and also creates a folder data on your computer /home/darnahi/ that will serve as your external drive to store your files
- ##note: If umbrel is running, the ports conflict. So ideal would be to use the nextcloud app on umbrel
+ ##Important: If umbrel is running, the ports conflict. So ideal would be to use the native nextcloud app on umbrel
  
 c) go to your web browser at https://<your-ip-address>:8080 to complete the rest of installation. Follow instructions on your webpage. Save your seed phrase in a text file.
   
@@ -57,18 +65,6 @@ g) It should take almost 10 min to get it up and running, and finally will give 
 h) Launch your desktop app at https://<your sub domain> and enter your username and pwd.
  
 i) download your nextcloud app and enter your 'https://<your sub domain>' which will prompt for password and then you should be done.
- 
-j) make a folder called 'Health_server'
-  
-     For users who wish to use Python to launch and install nextcloud:
-     =================================================================
-     a) git clone the repo
- 
-     b) in Terminal, cd into repo and $pip install requirements.txt
- 
-     c) in Terminal, in dir of repo $sudo python3 setup_darna.py
-        That should take you to step C as above
-    
 
 
 Step 2: Download your health data in nextcloud from iphone
@@ -80,8 +76,21 @@ b) If you have data on EPIC MyChart or your doctors gateway, login and go to Men
  
 c) Scan PDF's: On nextcloud, choose the '+' menu in the lower center and make scanned pdf's of your health documents and save to the Health_server
 
+
  ##Why nextcloud and not any cloud
  =================================
  Nextcloud allows you to store your data on your computer even if you were remote. Technically any cloud works but that is your choice. Im tired of others reselling my data.
+ 
+ Step 3: Sync files to your health server.
+ =========================================
+ Goto your home folder and enter the following python3 commands:
+      $cd Darna
+     
+      $pip install requirements.txt
+ 
+      $python3 syncmyfiles.py
+       
+ 
+ This step should lead to unzipping and setting you up with files in your health server. Followed by creating an encrypted backup in Darna folder.
  
 ## Help needed for android nextcloud app setup, downloads and PDF scans
