@@ -44,7 +44,7 @@ a) Make sure you have docker and python3. If not go to docker.com and python3; g
               $sudo apt-get install git
               $git clone https://github.com/seapoe1809/Darna
               $cd Darna
-              $pip install requirements.txt
+              $pip install -r requirements.txt
               $python3 setup_darna.py
         
 
@@ -58,18 +58,20 @@ b) Subsequently on terminal you could run if you prefer. The step above should a
  ##Important: If umbrel is running, the ports conflict. So ideal would be to use the native nextcloud app on umbrel
  
 c) go to your web browser at https://<your-ip-address>:8080 to complete the rest of installation. Follow instructions on your webpage. Save your seed phrase in a text file.
-  
-d) You should obtain a domain address to allow easy access from anywhere and also phone apps. It gives needed security certificates needed for your browsers to function well. To get one, you could get for free as listed on splash page or just buy one. I bought mine from google domains. If you wish, I can give you a secure subdomain for free, but would need your public IP address.
-  
-e) If you do buy one, login to your domain management account and go to DNS section and configure as shown in the Nextcloud splash page. You could get you public IP from typing in google 'whats my ip'
-  
-f) It should then take you to next page where you choose the modules you need. I would suggest choosing all except 'talk' module.
-  
-g) It should take almost 10 min to get it up and running, and finally will give you a username and password. eg. "admin" "asdnilsdfvblidfsvblisd98yy89y08ykjn".
  
-h) Launch your desktop app at https://<your sub domain> and enter your username and pwd.
+d) You should port forward in your router login. Goto advanced settings and add port forwarding to your device IP addr, external and internal: 443 and save.
+  
+e) You should obtain a domain address to allow easy access from anywhere and also phone apps. It gives needed security certificates needed for your browsers to function well. To get one, you could get for free as listed on splash page or just buy one. I bought mine from google domains. If you wish, I can give you a secure subdomain for free, but would need your public IP address.
+  
+f) If you do buy one, login to your domain management account and go to DNS section and configure as shown in the Nextcloud splash page. You could get you public IP from typing in google 'whats my ip'
+  
+g) It should then take you to next page where you choose the modules you need. I would suggest choosing all except 'talk' module.
+  
+h) It should take almost 10 min to get it up and running, and finally will give you a username and password. eg. "admin" "asdnilsdfvblidfsvblisd98yy89y08ykjn".
  
-i) download your nextcloud app and enter your 'https://<your sub domain>' which will prompt for password and then you should be done.
+i) Launch your desktop app at https://<your sub domain> and enter your username and pwd.
+ 
+j) download your nextcloud app and enter your 'https://<your sub domain>' which will prompt for password and then you should be done.
 
 
 Step 2: Download your health data in nextcloud from iphone
