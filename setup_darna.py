@@ -36,7 +36,7 @@ print("Waiting for installation to complete!")
 time.sleep(5)
 print("The browser to Nextcloud will open to complete set up. Also a browser to duckdns.org")
 print("if you wish to get a free DNS to help with security certificates.")
-
+"""
 #opens browser at <ip address: 8080>
 hostname = socket.gethostname()
 ip_address = socket.gethostbyname(hostname)
@@ -49,7 +49,5 @@ webbrowser.open(url)
 new_dir_name = 'Health_server'
 home_dir = os.path.expanduser("~")
 new_dir_path = os.path.join(home_dir, new_dir_name)
-subprocess.run(['mkdir', new_dir_path)
-#change into the new dir
-os.chdir(new_dir_path)
-subprocess.run([['mkdir', 'encrypt_backup'])
+subprocess.run(['mkdir', new_dir_path])
+"""
