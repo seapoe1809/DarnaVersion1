@@ -101,4 +101,9 @@ c) Scan PDF's: On nextcloud, choose the '+' menu in the lower center and make sc
  
  This step should lead to unzipping and setting you up with files in your health server. Followed by creating an encrypted backup in Darna folder.
  
+##stuck at domain validation for nextcloud and you feel you have completed all steps:
+ https://github.com/nextcloud/all-in-one#how-to-skip-the-domain-validation
 ## Help needed for android nextcloud app setup, downloads and PDF scans
+ 
+Sources and references:
+1. https://github.com/nextcloud
