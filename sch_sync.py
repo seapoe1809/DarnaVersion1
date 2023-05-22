@@ -1,7 +1,7 @@
 import unzip_py
 
 
-src_dir= "/mnt/darnahi/admin/files/Documents/Health_server"
+src_dir= "/home/darnahi/admin/files/Darnahi"
 
 #the main dir to store and unzip files
 dir_name = 'Health_server'
