@@ -104,6 +104,8 @@ c) Scan PDF's: On nextcloud, choose the '+' menu in the lower center and make sc
 ##stuck at domain validation for nextcloud and you feel you have completed all steps:
  https://github.com/nextcloud/all-in-one#how-to-skip-the-domain-validation
        sudo docker run --sig-proxy=false --name nextcloud-aio-mastercontainer --restart always --publish 80:80 --publish 8080:8080 --publish 8443:8443 --volume nextcloud_aio_mastercontainer:/mnt/docker-aio-config --volume /var/run/docker.sock:/var/run/docker.sock:ro --env NEXTCLOUD_DATADIR="/home/darnahi/" --env SKIP_DOMAIN_VALIDATION=true --add-host <domain-name>:<public-ip-address> nextcloud/all-in-one:latest
+ 
+ ## having trouble with nginx not responding the way it should. You might have to recompile it per instructions here: https://nginx.org/en/linux_packages.html?&_ga=2.69118673.19204514.1685092846-863965323.1683102994#Debian
 ## Help needed for android nextcloud app setup, downloads and PDF scans
  
 Sources and references:
