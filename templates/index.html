@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>DARNA.HI></title>
+  <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
+  <style>
+    body, html {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+    }
+
+    .text {
+      background-color: rgba(0, 0, 0, 0.85);
+      color: yellow;
+      padding: 5px;
+      text-align: center;
+      text-shadow: 2px 5px 10px rgba(0, 0, 0, 1);
+      font-family: Calibri;
+      outline:none;
+      -webkit-text-stroke: 0.5px darkgrey;
+      font-size: 25px;
+      animation: moving-shadow 3s infinite; /* Apply the animation to the banner text */
+    }
+
+     @keyframes moving-shadow {
+       0% { text-shadow: 5px 5px 10px rgba(0, 0, 0, 1); } /* Initial shadow position */
+       50% { text-shadow: 10px 10px 20px rgba(1, 1, 1, 1); } /* Shadow moves to the right and down */
+       100% { text-shadow: 10px 10px 10px rgba(1, 1, 0, 0); } /* Shadow returns to the initial position */
+   }
+    
+    .container {
+      width: 100%;
+      height: calc(100% - 5px); /* Adjust the height value to account for the banner height */
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 1);
+      animation: moving-shadow 3s infinite;
+      
+    }
+    
+    @keyframes moving-shadow {
+      0% { box-shadow: 20px 20px 100px rgba(0, 0, 1, 0.5); } /* Initial shadow position */
+      50% { box-shadow: 10px 10px 10px rgba(1, 1, 1, 1); } /* Shadow moves to the right and down */
+      100% { box-shadow: 20px 20px 30px rgba(0.5, 1, 0, 0); } /* Shadow returns to the initial position */
+    }
+
+   .container:hover {
+     animation: moving-shadow 3s infinite; /* Apply the animation to the container on hover */
+}
+
+    @media only screen and (max-width: 375px) {
+  /* iPhones (portrait mode) */
+  .container {
+    background-image: url('{{ url_for("static", filename="Steps.jpg") }}');
+    background-size: contain; /* Scale the image to fit the container without cropping */
+    background-repeat: no-repeat;
+    background-position: center;
+    }
+}
+
+    @media only screen and (min-width: 376px) and (max-width: 667px) {
+  /* iPhones (landscape mode) */
+  .container {
+    background-image: url('{{ url_for("static", filename="Steps.jpg") }}');
+    background-size: contain; /* Scale the image to fit the container without cropping */
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
+    @media only screen and (min-width: 668px) {
+  /* Laptops and larger screens */
+  .container {
+    background-image: url('{{ url_for("static", filename="Vineyard.jpg") }}');
+  }
+}
+
+    .icons {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: grid
+     
+    }
+
+    .icons a {
+     
+      color: grey;
+      text-decoration: none;
+      font-size: 80px;
+      margin: 10 5px;
+     
+      
+    }
+
+  </style>
+</head>
+<body>
+  <div class="text">
+    <h1>DARNA.hi v1</h1>
+    
+  </div>
+  
+  <div class="container"></div>
+
+  <div class="icons">
+    <a href="{{ url_for('folder_index') }}" target="_blank"><i class="fas fa-home" ></i></a>
+    <a href="{{ url_for('static', filename='summary.pdf') }}" target="_blank"><i class="fas fa-notes-medical"></i></a>
+    <a href="nextcloud://" target="_blank"><i class="fas fa-cloud"></i></a>
+    <a href="/launch-program" target="_blank"><i class="fas fa-sync"></i></a>
+    <a href="/upload" target="_blank"><i class="fas fa-upload"></i></a>
+    <a href="http://localhost:3000/dashboards" target="_blank"><i class="fas fa-film"></i></a>
+     
+    </div>
+  </div>
+</body>
+</html>
+

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Server Folder</title>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        @keyframes blink {
+            0% { visibility: visible; }
+            50% { visibility: hidden; }
+            100% { visibility: visible; }
+        }
+
+        body {
+            background-image: url("{{ url_for('static', filename='yellow_splat.jpg') }}");
+            background-size: contain; /* Scale the image to fit the container without cropping */
+    	    background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        h1 {
+            animation: blink 2s infinite;
+            color: yellow;
+            font-size: 25px;
+            font-family: Calibri;
+            text-shadow: 2px 2px 4px #000000;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: 1fr 1fr; /* Two columns */
+            column-gap: 20px; /* Gap between columns */
+        }
+
+        .file-container,
+        .folder-container {
+            display: inline-grid;
+            align-items: center; /* Center icons vertically */
+        }
+
+        .file-icon,
+        .folder-icon {
+            color: purple;
+            display: inline-grid;
+            margin-right: 1px;
+            grid-template-columns: repeat(2, 1fr); /* Two columns */
+            align-items: center; /* Center icons vertically */
+        }
+
+        .file-icon i,
+        .folder-icon i {
+            color: pink;
+            font-size: 40px; /* Larger icon size */
+        }
+
+        a {
+            color: purple;
+            text-decoration: none;
+        }
+
+        /* Optimize for iPhone screens */
+        @media only screen and (max-width: 480px) {
+            h1 {
+                font-size: 24px; 
+            }
+
+            .container {
+            display: grid;
+            grid-template-columns: 1fr 1fr; /* Two columns */
+            column-gap: 10px; /* Gap between columns */
+            }
+
+            .file-container,
+            .folder-container {
+            display: inline-grid;
+            align-items: center; /* Center icons vertically */
+
+            .file-icon i,
+            .folder-icon i {
+                font-size: 25px; /* Reduce the icon size for smaller screens */
+            }
+        }
+
+    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <h1>Server Folder</h1>
+    <ul class="container">
+        {% for file in files %}
+        <li>
+            {% if file.is_folder %}
+            <a href="{{ file.path }}">
+                <i class="fas fa-folder folder-icon"></i>{{ file.filename }}
+            </a>
+            {% else %}
+            <a href="{{ file.path }}" target="_blank">
+                <i class="fas fa-file file-icon"></i>{{ file.filename }}
+            </a>
+            {% endif %}
+        </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
+

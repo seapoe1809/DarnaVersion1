@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Upload Server</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        @keyframes blink {
+            0% { visibility: visible; }
+            50% { visibility: hidden; }
+            100% { visibility: visible; }
+        }
+
+        body {
+            background-image: url("{{ url_for('static', filename='Vineyard.jpg') }}");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .form-container {
+            background-color: black;
+            padding: 20px;
+            border-radius: 5px;
+            max-width: 250px; /* Limit the width for smaller screens */
+        }
+        
+        .form-container h1 {
+            text-align: center;
+            animation: blink 2s infinite;
+            color: yellow;
+            font-family: Calibri;
+            text-shadow: 2px 2px 4px #000000;
+            margin-bottom: 20px; /* Add some spacing below the heading */
+        }
+        
+        .form-container input[type="file"],
+        .form-container button {
+            display: block;
+            width: 100%;
+            margin-bottom: 20px; /* Reduce the margin for smaller screens */
+            padding: 10px;
+            font-size: 16px;
+            border-radius: 10px;
+            border: none;
+        }
+        
+        .form-container button {
+            background-color: #ff0000;
+            color: #ffffff;
+            cursor: pointer;
+            width: 100px;
+            height: 100px;
+            font-size: 20px;
+            border-radius: 50%;
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* Optimize for iPhone screens */
+        @media only screen and (max-width: 480px) {
+            .form-container {
+                padding: 10px; /* Reduce the padding for smaller screens */
+            }
+
+            .form-container input[type="file"],
+            .form-container button {
+                margin-bottom: 10px; /* Reduce the margin for smaller screens */
+                font-size: 14px; /* Adjust the font size for smaller screens */
+            }
+
+            .form-container button {
+                width: 80px; /* Reduce the button size for smaller screens */
+                height: 80px; /* Reduce the button size for smaller screens */
+                font-size: 18px; /* Adjust the font size for smaller screens */
+            }
+        }
+    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <div class="form-container">
+        <h1>Upload to Server</h1>
+        <form method="POST" action="/upload" enctype="multipart/form-data">
+            <input type="file" name="file" accept=".pdf, .jpg, .png, .zip" required>
+            <button type="submit"><i class="fas fa-upload"></i></button>
+        </form>
+    </div>
+</body>
+</html>
+
