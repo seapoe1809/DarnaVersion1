@@ -22,7 +22,7 @@ This program is distributed in the hope that it will be useful, but WITHOUT ANY 
 
 Snapshots:
 =============
-!(https://github.com/seapoe1809/Darna/assets/129666906/f3a34322-8402-485c-b8d0-cc70bf9cd2bc")
+![](https://github.com/seapoe1809/Darna/assets/129666906/f3a34322-8402-485c-b8d0-cc70bf9cd2bc")
 (https://github.com/seapoe1809/Darna/assets/129666906/7feb1a14-7e6a-4273-b571-1f1a282350b3)
 (https://github.com/seapoe1809/Darna/assets/129666906/a4a53580-2943-4942-bf03-06d913ac8a4e)
 !(https://github.com/seapoe1809/Darna/assets/129666906/3e5e2600-eab8-40a8-9e15-c17fa8a46e6c)
