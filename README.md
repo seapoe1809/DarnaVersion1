@@ -23,7 +23,7 @@ This program is distributed in the hope that it will be useful, but WITHOUT ANY 
 Snapshots:
 =============
 <img src="https://github.com/seapoe1809/Darna/assets/129666906/f3a34322-8402-485c-b8d0-cc70bf9cd2bc" width="200", height="300"/>
-![IMG_5570]![IMG_5572](https://github.com/seapoe1809/Darna/assets/129666906/7feb1a14-7e6a-4273-b571-1f1a282350b3)=200x400
+![IMG_5570]![IMG_5572](https://github.com/seapoe1809/Darna/assets/129666906/7feb1a14-7e6a-4273-b571-1f1a282350b3){:height="200px" width="400px"}.
 (https://github.com/seapoe1809/Darna/assets/129666906/a4a53580-2943-4942-bf03-06d913ac8a4e)
 ![IMG_5575](https://github.com/seapoe1809/Darna/assets/129666906/3e5e2600-eab8-40a8-9e15-c17fa8a46e6c)
 ![IMG_5570](https://github.com/seapoe1809/Darna/assets/129666906/0d6b7ae8-b95b-4306-ad80-99a193f99dad)
