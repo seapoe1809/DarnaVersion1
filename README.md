@@ -22,24 +22,24 @@ This program is distributed in the hope that it will be useful, but WITHOUT ANY 
 
 Snapshots:
 =============
-(https://github.com/seapoe1809/Darna/assets/129666906/f3a34322-8402-485c-b8d0-cc70bf9cd2bc")
-![IMG_5570]![IMG_5572](https://github.com/seapoe1809/Darna/assets/129666906/7feb1a14-7e6a-4273-b571-1f1a282350b3)
+!(https://github.com/seapoe1809/Darna/assets/129666906/f3a34322-8402-485c-b8d0-cc70bf9cd2bc")
+(https://github.com/seapoe1809/Darna/assets/129666906/7feb1a14-7e6a-4273-b571-1f1a282350b3)
 (https://github.com/seapoe1809/Darna/assets/129666906/a4a53580-2943-4942-bf03-06d913ac8a4e)
-![IMG_5575](https://github.com/seapoe1809/Darna/assets/129666906/3e5e2600-eab8-40a8-9e15-c17fa8a46e6c)
-![IMG_5570](https://github.com/seapoe1809/Darna/assets/129666906/0d6b7ae8-b95b-4306-ad80-99a193f99dad)
+!(https://github.com/seapoe1809/Darna/assets/129666906/3e5e2600-eab8-40a8-9e15-c17fa8a46e6c)
+!(https://github.com/seapoe1809/Darna/assets/129666906/0d6b7ae8-b95b-4306-ad80-99a193f99dad)
 
 
 
 
 
-![IMG_5573](https://github.com/seapoe1809/Darna/assets/129666906/ae934f4a-cde2-426c-846b-6d03fd1c673d)
-![IMG_5581](https://github.com/seapoe1809/Darna/assets/129666906/bc569065-d8d8-4238-bd94-26943e20d74e)
+(https://github.com/seapoe1809/Darna/assets/129666906/ae934f4a-cde2-426c-846b-6d03fd1c673d)
+!(https://github.com/seapoe1809/Darna/assets/129666906/bc569065-d8d8-4238-bd94-26943e20d74e)
 
-![IMG_5576](https://github.com/seapoe1809/Darna/assets/129666906/3b8481ac-ccd5-4fcd-95ea-c614c4ece37d)
+!(https://github.com/seapoe1809/Darna/assets/129666906/3b8481ac-ccd5-4fcd-95ea-c614c4ece37d)
 ![IMG_5577](https://github.com/seapoe1809/Darna/assets/129666906/cbf00dd4-b45d-4137-8306-e90bdae8159b)
 
-![IMG_5578](https://github.com/seapoe1809/Darna/assets/129666906/a59bdd51-caa0-409d-994f-27c716b82b93)
-![IMG_5580](https://github.com/seapoe1809/Darna/assets/129666906/a94d831b-df02-4389-94fa-39aae382e380)
+!(https://github.com/seapoe1809/Darna/assets/129666906/a59bdd51-caa0-409d-994f-27c716b82b93)
+!(https://github.com/seapoe1809/Darna/assets/129666906/a94d831b-df02-4389-94fa-39aae382e380)
 
 
 
