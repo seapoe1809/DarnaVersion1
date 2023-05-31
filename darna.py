@@ -4,12 +4,14 @@ import os, subprocess
 import getpass
 import variables
 
+
 app = Flask(__name__)
 folderpath = variables.HS_path
+ip_address = variables.ip_address
 
 @app.route('/')
 def index():
-    return render_template('index.html')
+    return render_template('index.html', ip_address=ip_address)
 
 @app.route('/folder')
 @app.route('/folder/<path:foldername>')
