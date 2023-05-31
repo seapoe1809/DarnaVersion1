@@ -22,16 +22,15 @@ This program is distributed in the hope that it will be useful, but WITHOUT ANY 
 
 Snapshots:
 =============
-![](https://github.com/seapoe1809/Darna/assets/129666906/f3a34322-8402-485c-b8d0-cc70bf9cd2bc")
-(https://github.com/seapoe1809/Darna/assets/129666906/7feb1a14-7e6a-4273-b571-1f1a282350b3)
-(https://github.com/seapoe1809/Darna/assets/129666906/a4a53580-2943-4942-bf03-06d913ac8a4e)
-!(https://github.com/seapoe1809/Darna/assets/129666906/3e5e2600-eab8-40a8-9e15-c17fa8a46e6c)
-!(https://github.com/seapoe1809/Darna/assets/129666906/0d6b7ae8-b95b-4306-ad80-99a193f99dad)
-(https://github.com/seapoe1809/Darna/assets/129666906/ae934f4a-cde2-426c-846b-6d03fd1c673d)
-!(https://github.com/seapoe1809/Darna/assets/129666906/bc569065-d8d8-4238-bd94-26943e20d74e)
-
-!(https://github.com/seapoe1809/Darna/assets/129666906/3b8481ac-ccd5-4fcd-95ea-c614c4ece37d)
-!(https://github.com/seapoe1809/Darna/assets/129666906/cbf00dd4-b45d-4137-8306-e90bdae8159b)
+<img src="https://github.com/seapoe1809/Darna/assets/129666906/f3a34322-8402-485c-b8d0-cc70bf9cd2bc" width="200" height="400" alt="Image1"/>
+<img src="https://github.com/seapoe1809/Darna/assets/129666906/7feb1a14-7e6a-4273-b571-1f1a282350b3" width="200" height="400" alt="Image1"/>
+<img src="https://github.com/seapoe1809/Darna/assets/129666906/a4a53580-2943-4942-bf03-06d913ac8a4e" width="200" height="400" alt="Image1"/>
+<img src="https://github.com/seapoe1809/Darna/assets/129666906/3e5e2600-eab8-40a8-9e15-c17fa8a46e6c" width="200" height="400" alt="Image1"/>
+<img src="https://github.com/seapoe1809/Darna/assets/129666906/0d6b7ae8-b95b-4306-ad80-99a193f99dad" width="200" height="400" alt="Image1"/>
+<img src="https://github.com/seapoe1809/Darna/assets/129666906/ae934f4a-cde2-426c-846b-6d03fd1c673d" width="200" height="400" alt="Image1"/>
+<img src="https://github.com/seapoe1809/Darna/assets/129666906/bc569065-d8d8-4238-bd94-26943e20d74e" width="200" height="400" alt="Image1"/>
+<img src="https://github.com/seapoe1809/Darna/assets/129666906/3b8481ac-ccd5-4fcd-95ea-c614c4ece37d" width="200" height="400" alt="Image1"/>
+<img src="https://github.com/seapoe1809/Darna/assets/129666906/cbf00dd4-b45d-4137-8306-e90bdae8159b" width="200" height="400" alt="Image1"/>
 
 !(https://github.com/seapoe1809/Darna/assets/129666906/a59bdd51-caa0-409d-994f-27c716b82b93)
 !(https://github.com/seapoe1809/Darna/assets/129666906/a94d831b-df02-4389-94fa-39aae382e380)
@@ -69,63 +68,71 @@ a) Make sure you have docker and python3. If not go to docker.com and python3; g
 
 That should take you to step c as below
 
-b) Subsequently on terminal you could run if you prefer. The step above should automatically do this for you:
-
-             $sudo docker run --sig-proxy=false --name nextcloud-aio-mastercontainer --restart always --publish 80:80 --publish 8080:8080 --publish 8443:8443 --volume nextcloud_aio_mastercontainer:/mnt/docker-aio-config --volume /var/run/docker.sock:/var/run/docker.sock:ro --env NEXTCLOUD_DATADIR="/home/darnahi/" nextcloud/all-in-one:latest
- 
- ##This starts docker containers  and also creates a folder data on your computer /home/darnahi/ that will serve as your external drive to store your files
+b) This starts docker containers  and also creates a folder data on your computer /home/darnahi/ that will serve as your external drive to store your files as part of Nextcloud instance.
  ##Important: If umbrel is running, the ports conflict. So ideal would be to use the native nextcloud app on umbrel
  
-c) go to your web browser at https://<your-ip-address>:8080 to complete the rest of installation. Follow instructions on your webpage. Save your seed phrase in a text file.
+c) Now go to your web browser at https://<your-ip-address>:8080 to complete the rest of installation. You could get your ip_address from $ifconfig. Follow instructions on your webpage. Remember to save your seed phrase in a text file.
  
-d) You should port forward in your router login. Goto advanced settings and add port forwarding to your device IP addr, external and internal: 443 and save.
+d) You should port forward 443 in your router. Steps are explained well by nextcloud. Login to your router. Usually instructions are at base of your router. Goto advanced settings and add port forward 443 (both TCP/UDP) to your device IP addr; Make sure you select 443 for bothe external and internal and save.
   
 e) You should obtain a domain address to allow easy access from anywhere and also phone apps. It gives needed security certificates needed for your browsers to function well. To get one, you could get for free as listed on splash page or just buy one. I bought mine from google domains. If you wish, I can give you a secure subdomain for free, but would need your public IP address.
   
 f) If you do buy one, login to your domain management account and go to DNS section and configure as shown in the Nextcloud splash page. You could get you public IP from typing in google 'whats my ip'
   
-g) It should then take you to next page where you choose the modules you need. I would suggest choosing all except 'talk' module.
+g) It should then take you to next page where you choose the nextcloud modules you need. I would suggest choosing all except 'talk' module.
   
-h) It should take almost 10 min to get it up and running, and finally will give you a username and password. eg. "admin" "asdnilsdfvblidfsvblisd98yy89y08ykjn".
+h) It should take almost 10 min to get it up and running, and finally will give you a username and password. eg. "admin" "asdnilsdfvblidfsvblisd98yy89y08ykjn". Save it in your password manager or a text file.
  
-i) Launch your desktop app at https://<your sub domain> and enter your username and pwd.
+i) Launch your desktop app at https://<your-sub-domain> (eg.https://nextcloud.darna.com and enter your username and pwd. 
  
-j) download your nextcloud app and enter your 'https://<your sub domain>' which will prompt for password and then you should be done.
-
+j) download your nextcloud app in ios or android, and enter your 'https://<your sub domain>' which will prompt you for password and then you should be done!
+ 
+##Why nextcloud and not any cloud
+ Nextcloud allows you to store your data on your computer even if you were remote and gives you more control. Technically any cloud works but that is your choice. Im tired of others reselling my data.
 
 Step 2: Download your health data in nextcloud from iphone
 =========================================================
+a) Make a folder called 'Darnahi' in first splash page of Nextcloud. The next py files will use that to sync in your computer. 
+ 
+b) Download ios health files: On apple health app, click the profile icon, then choose "Export All Health Data" and save the zip file in nextcloud to 'Darnahi' folder.
+ 
+b) If you have data on EPIC MyChart or your doctors gateway, login and go to Menu, search 'sharing' or 'export', click 'yourself' and download a zip file to 'Darnahi' folder.
+ 
+c) Scan PDF's: On nextcloud, choose the '+' menu in the lower center and make scanned pdf's of your health documents and save to the 'Darnahi' folder.
 
-a) On apple health app, click the profile icon, then choose "Export All Health Data" and save the zip file in nextcloud to 'Health_server'.
- 
-b) If you have data on EPIC MyChart or your doctors gateway, login and go to Menu, search 'sharing' or 'export', click 'yourself' and download a zip file to 'Health_server'.
- 
-c) Scan PDF's: On nextcloud, choose the '+' menu in the lower center and make scanned pdf's of your health documents and save to the Health_server
-
-
- ##Why nextcloud and not any cloud
- =================================
- Nextcloud allows you to store your data on your computer even if you were remote. Technically any cloud works but that is your choice. Im tired of others reselling my data.
  
  
- 
- Step 3: Sync files to your health server.
- =========================================
- Goto your home folder and enter the following python3 commands:
+ Step 3: sync files to your health server from the Darnahi Nextcloud folder:
+ ==========================================================================
+ Goto your home folder Darna and enter the following python3 commands:
         
-                 $cd Darna
+   
                
                  $python3 syncmyfiles.py
        
  
- This step should lead to unzipping and setting you up with files in your health server. Followed by creating an encrypted backup in Darna folder.
+ This step should lead to unzipping, syncing and setting you up with files in your health server. it should also set up Grafana to view your file. I am using https://github.com/k0rventen/apple-health-grafana code as this person seems to have done a fair job in visualizing the data. This followed by creating an encrypted backup in Darna folder done automatically by the syncmyfiles.py
+ 
+ Step 4: Start the flask server to view your files
+ ==================================================
+ Go to the Health_server dir and start the flask server.
+          
+               $cd /home/<user>/Health_server
+               $python3 darna.py
+ 
+ 
+ It should tell you which ip address to go to to start interacting with your data. Hope you like it! Please share feedback and let me know if you woudl like to contribute to this project.
+ 
+
+ Other issues:
  
 ##stuck at domain validation for nextcloud and you feel you have completed all steps:
  https://github.com/nextcloud/all-in-one#how-to-skip-the-domain-validation
        sudo docker run --sig-proxy=false --name nextcloud-aio-mastercontainer --restart always --publish 80:80 --publish 8080:8080 --publish 8443:8443 --volume nextcloud_aio_mastercontainer:/mnt/docker-aio-config --volume /var/run/docker.sock:/var/run/docker.sock:ro --env NEXTCLOUD_DATADIR="/home/darnahi/" --env SKIP_DOMAIN_VALIDATION=true --add-host <domain-name>:<public-ip-address> nextcloud/all-in-one:latest
  
- ## having trouble with nginx not responding the way it should. You might have to recompile it per instructions here: https://nginx.org/en/linux_packages.html?&_ga=2.69118673.19204514.1685092846-863965323.1683102994#Debian
-## Help needed for android nextcloud app setup, downloads and PDF scans
+## Help needed for android nextcloud app setup, downloads and PDF scans OCR recognition
  
 Sources and references:
 1. https://github.com/nextcloud
+2. https://github.com/k0rventen/apple-health-grafana
+3. chat.openai.com
