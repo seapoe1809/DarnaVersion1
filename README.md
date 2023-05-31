@@ -31,9 +31,8 @@ Snapshots:
 <img src="https://github.com/seapoe1809/Darna/assets/129666906/bc569065-d8d8-4238-bd94-26943e20d74e" width="200" height="400" alt="Image1"/>
 <img src="https://github.com/seapoe1809/Darna/assets/129666906/3b8481ac-ccd5-4fcd-95ea-c614c4ece37d" width="200" height="400" alt="Image1"/>
 <img src="https://github.com/seapoe1809/Darna/assets/129666906/cbf00dd4-b45d-4137-8306-e90bdae8159b" width="200" height="400" alt="Image1"/>
-
-!(https://github.com/seapoe1809/Darna/assets/129666906/a59bdd51-caa0-409d-994f-27c716b82b93)
-!(https://github.com/seapoe1809/Darna/assets/129666906/a94d831b-df02-4389-94fa-39aae382e380)
+<img src="https://github.com/seapoe1809/Darna/assets/129666906/a59bdd51-caa0-409d-994f-27c716b82b93" width="200" height="400" alt="Image1"/>)
+<img src="https://github.com/seapoe1809/Darna/assets/129666906/a94d831b-df02-4389-94fa-39aae382e380" width="200" height="400" alt="Image1"/>
 
 
 
