@@ -1,10 +1,10 @@
 import os
 import subprocess
-import schedule
 import time
 import base64
 import stdiomask
 import hashlib
+import socket
 import getpass
 import shutil
 from cryptography.fernet import Fernet
@@ -18,9 +18,9 @@ def extract_zip_files(directory):
                 with zipfile.ZipFile(zip_file_path, "r") as zip_ref:
                     zip_ref.extractall(root)
                     print("Extracted:", zip_file_path)
-                #remove the zip files after extraction
-                os.remove(zip_file_path)
-                print("Deleted:", zip_file_path)
+                #remove the zip files after extraction hashed as testing for visualization
+                #os.remove(zip_file_path)
+                #print("Deleted:", zip_file_path)
 
 ## creating a dir path in ~/ location
 def create_directory_paths(dir_name):
@@ -51,6 +51,29 @@ def get_fernet_from_cache():
     fernet = retrieve_fernet_from_cache()
     return fernet
 
+#get IP address
+def get_ip_address():
+    # Create a socket object
+    sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+
+    try:
+        # Connect to a remote server (Google DNS)
+        sock.connect(("8.8.8.8", 80))
+
+        # Get the local IP address
+        ip_address = sock.getsockname()[0]
+    finally:
+        # Close the socket
+        sock.close()
+
+    return ip_address
+
+
+
+
+
+
+
 """#encrypt folder contents to create a backup
 def encrypt_folder_contents(source_folder, destination_folder):
     if not os.path.exists(destination_folder):
@@ -77,6 +100,3 @@ def encrypt_folder_contents(source_folder, destination_folder):
                 # set permissions to source
                 #os.chmod(destination_path, permissions)
 """
-#run scheduled scripts
-def run_script(sch_sync):
-    subprocess.Popen(["python3", sch_sync])
