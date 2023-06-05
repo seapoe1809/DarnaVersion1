@@ -59,8 +59,9 @@ To make things even easier, I used Python for some automation to move files on y
 
 Please note that this is only the first version of the project, and I plan on adding more features and making improvements in the future.
 
-step 1: Install and configure nextcloud
+step 1: Install and configure nextcloud with your computer as cloud
 =======================================
+we are using nextcloud as it is open source and allows you to run your computer at home as your cloud 
 
 a) Make sure you have docker and python3. If not go to docker.com and python3; get a free acct and then install. Once done do the following:
  Install Git and git clone Darna repo:
