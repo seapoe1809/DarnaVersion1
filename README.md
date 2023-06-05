@@ -122,6 +122,8 @@ c) Scan PDF's: On nextcloud, choose the '+' menu in the lower center and make sc
  
  It should tell you which ip address to go to to start interacting with your data. Hope you like it! Please share feedback and let me know if you woudl like to contribute to this project.
  
+ The default password for Darna is 'health' and for Grafana is user:'admin', password:'health'.
+ 
 
  Other issues:
  
