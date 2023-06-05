@@ -25,23 +25,23 @@ Snapshots:
 
 
 <img src="https://github.com/seapoe1809/Darna/assets/82007659/0b1e0ed2-bcbd-4a5c-8680-cadb17fc9055" width =200, height=400>
-![IMG_5601](https://github.com/seapoe1809/Darna/assets/82007659/96ff06aa-3739-4596-9ead-240359e40a48)
-![IMG_5601_2](https://github.com/seapoe1809/Darna/assets/82007659/c9a21783-9c57-464a-9f8e-d71f658c7793)
-![IMG_5602](https://github.com/seapoe1809/Darna/assets/82007659/0b126f2a-d66f-4bc2-a90f-1a49efb2281d)
-![IMG_5602_2](https://github.com/seapoe1809/Darna/assets/82007659/478d54cd-5e25-4134-ba6c-21a67220b5f7)
-![IMG_5603](https://github.com/seapoe1809/Darna/assets/82007659/c1756960-15b9-495e-97f2-7e0927c7cb31)
-![IMG_5603_2](https://github.com/seapoe1809/Darna/assets/82007659/6807fe69-1305-47dd-8d2c-0ad3bcfbc8fa)
-![IMG_5603_3](https://github.com/seapoe1809/Darna/assets/82007659/eb4f9e67-fd06-4b77-aa72-dbb025997014)
-![IMG_5603_4](https://github.com/seapoe1809/Darna/assets/82007659/2b88836b-5375-46f8-89a8-a14d766c0813)
-![IMG_5604](https://github.com/seapoe1809/Darna/assets/82007659/0d4136b1-7b2b-4435-ad05-e74712779f58)
-![IMG_5604_2](https://github.com/seapoe1809/Darna/assets/82007659/ffc57183-8ef7-4d9e-bd39-02e580aa115a)
-![IMG_5605](https://github.com/seapoe1809/Darna/assets/82007659/8ff0cb26-c491-4186-9302-8960f8ebcb54)
-![IMG_5605_1](https://github.com/seapoe1809/Darna/assets/82007659/869afa6e-ec9d-4203-a6c9-636d55ca6e57)
-![IMG_5606](https://github.com/seapoe1809/Darna/assets/82007659/b17eb880-cd9d-4657-8099-1a508f7167a8)
-![IMG_5606_1](https://github.com/seapoe1809/Darna/assets/82007659/f1c26f0c-fb38-48e1-8551-5b36de750c91)
-![IMG_5606_2](https://github.com/seapoe1809/Darna/assets/82007659/f718336b-e545-43e5-aa50-aa004c274954)
-![IMG_5606_3](https://github.com/seapoe1809/Darna/assets/82007659/86ab0bce-a0da-4330-9849-2d1600262f27)
-![IMG_5606_4](https://github.com/seapoe1809/Darna/assets/82007659/c8272ff2-69db-4984-8ebe-469cb02ee7ab)
+<img src="https://github.com/seapoe1809/Darna/assets/82007659/96ff06aa-3739-4596-9ead-240359e40a48" width =200, height=400>
+<img src="https://github.com/seapoe1809/Darna/assets/82007659/c9a21783-9c57-464a-9f8e-d71f658c7793" width =200, height=400>
+<img src="https://github.com/seapoe1809/Darna/assets/82007659/0b126f2a-d66f-4bc2-a90f-1a49efb2281d" width =200, height=400>
+<img src="https://github.com/seapoe1809/Darna/assets/82007659/478d54cd-5e25-4134-ba6c-21a67220b5f7" width =200, height=400>
+<img src="https://github.com/seapoe1809/Darna/assets/82007659/c1756960-15b9-495e-97f2-7e0927c7cb31" width =200, height=400>
+<img src="https://github.com/seapoe1809/Darna/assets/82007659/6807fe69-1305-47dd-8d2c-0ad3bcfbc8fa" width =200, height=400>
+<img src="https://github.com/seapoe1809/Darna/assets/82007659/eb4f9e67-fd06-4b77-aa72-dbb025997014" width =200, height=400>
+<img src="https://github.com/seapoe1809/Darna/assets/82007659/2b88836b-5375-46f8-89a8-a14d766c0813" width =200, height=400>
+<img src="https://github.com/seapoe1809/Darna/assets/82007659/0d4136b1-7b2b-4435-ad05-e74712779f58" width =200, height=400>
+<img src="https://github.com/seapoe1809/Darna/assets/82007659/ffc57183-8ef7-4d9e-bd39-02e580aa115a" width =200, height=400>
+<img src="https://github.com/seapoe1809/Darna/assets/82007659/8ff0cb26-c491-4186-9302-8960f8ebcb54" width =200, height=400>
+<img src="https://github.com/seapoe1809/Darna/assets/82007659/869afa6e-ec9d-4203-a6c9-636d55ca6e57" width =200, height=400>
+<img src="https://github.com/seapoe1809/Darna/assets/82007659/b17eb880-cd9d-4657-8099-1a508f7167a8" width =200, height=400>
+<img src="https://github.com/seapoe1809/Darna/assets/82007659/f1c26f0c-fb38-48e1-8551-5b36de750c91" width =200, height=400>
+<img src="https://github.com/seapoe1809/Darna/assets/82007659/f718336b-e545-43e5-aa50-aa004c274954" width =200, height=400>
+<img src="https://github.com/seapoe1809/Darna/assets/82007659/86ab0bce-a0da-4330-9849-2d1600262f27" width =200, height=400>
+<img src="https://github.com/seapoe1809/Darna/assets/82007659/c8272ff2-69db-4984-8ebe-469cb02ee7ab" width =200, height=400>
 
 
 basic requirements
