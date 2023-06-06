@@ -165,7 +165,7 @@ def upload_file():
         file = request.files['file']
         if file:
             filename =file.filename
-            file.save(os.path.join(folderpath. filename)
+            file.save(os.path.join(folderpath. filename))
             return 'File uploaded successfully!'
     return render_template('upload.html')
 
