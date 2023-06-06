@@ -11,7 +11,9 @@ app.secret_key = 'your_secret_key_jjkjdhbclskdbvlkdfv'
 
 folderpath = variables.HS_path
 ip_address = variables.ip_address
-
+user = variables.user
+pwd = variables.pwd
+nextcloud_url = f"https://{ip_address}:8080/remote.php/dav/files/{user}/Darnahi"
 # Configure static folder path
 app.static_folder = 'static'
 
@@ -120,26 +122,38 @@ def execute_command():
         return redirect('/sudopwd')
 
     folder_path = folderpath
-    command = ['sudo', '-S', 'python3', f'{folder_path}/tmp_file_properties.py']
+    command1 = ['sudo', 'rsync', '-avz', '--chmod=750', '/home/darnahi/admin/files/Darnahi', f'{folder_path}']
+    command2 = ["curl", "-u", f"{user}:{pwd}", "-T", f"{folder_path}", f"{nextcloud_url}" ]
 
     password = session.get('sudopwd', '')
 
     try:
-        process = subprocess.Popen(
-            command,
+        process1 = subprocess.Popen(
+            command1,
             stdin=subprocess.PIPE,
             stdout=subprocess.PIPE,
             universal_newlines=True
         )
-        output, error = process.communicate(input=password + '\n')
+        output, error = process1.communicate(input=password + '\n')
 
-        if process.returncode == 0:
-            return "Program launched successfully!"
-        else:
+        if process1.returncode != 0:
             return "Unable to run due to non-superuser status!"
-
+            
+        for filename in os.listdir(f'{folder_path}'):
+            file_path = os.path.join(f'{folder_path}', filename)
+            if os.path.isfile(file_path):
+                process2 = subprocess.Popen(
+                    command2,
+                    stdin=subprocess.PIPE,
+                    stdout=subprocess.PIPE,
+                    universal_newlines=True
+                )
+                process2.communicate()
+            
+        return "Program launched successfully!"
     except subprocess.CalledProcessError as e:
         return "Error occurred while running the Sync! Login directly to continue."
+
 
 
 @app.route('/upload', methods=['GET', 'POST'])
