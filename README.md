@@ -133,7 +133,17 @@ c) Scan PDF's: On nextcloud, choose the '+' menu in the lower center and make sc
  
  The default password for Darna is 'health' and for Grafana is user:'admin', password:'health'.
  
+ To note is the variables.py file that stores some variables that the darna.py file uses. It automatically tries to populate with the IP address and the path to health server. It does however need you to update the Nextcloud username and password to allow the SYNC fuction to work. The SYNC button in UI starts movement of files between Nextcloud and Healthserver but however pushing files back into nextcloud uses the webdav format and hence uses a curl command to push files. For that reason it needs your username and password for Nextcloud.
+ Open the variables.py with text editor and add: 
+ 
+                               user = <username> #usually admin
+                               pwd = <password_nextcloud> #usually a long string of alphanumerics
+ 
 
+
+ 
+ 
+ 
  Other issues:
  
 ##stuck at domain validation for nextcloud and you feel you have completed all steps:
