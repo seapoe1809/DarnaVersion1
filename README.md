@@ -46,10 +46,10 @@ Snapshots:
 
 basic requirements
 =======================================
-#linux os (any distro as long as docker runs)
-#git
-#docker
-#python3
+1. linux os (any distro as long as docker runs)
+2. git
+3. docker
+4. python3
 
 For my project, I decided to make the software only for Linux users. The first step is to install Nextcloud, which is a versatile self-cloud management tool that is open source, which I am passionate about.
 
@@ -60,8 +60,8 @@ To make things even easier, I used Python for some automation to move files on y
 Please note that this is only the first version of the project, and I plan on adding more features and making improvements in the future.
 
 step 1: Install and configure nextcloud with your computer as cloud
-=======================================
-we are using nextcloud as it is open source and allows you to run your computer at home as your cloud 
+===================================================================
+we are using nextcloud as it is open source and allows you to run your computer at home as your cloud. Remember step c in this section can be a little finicky. Appreciate your patience with this. 
 
 a) Make sure you have docker and python3. If not go to docker.com and python3; get a free acct and then install. Once done do the following:
  Install Git and git clone Darna repo:
@@ -74,12 +74,15 @@ a) Make sure you have docker and python3. If not go to docker.com and python3; g
               $python3 setup_darna.py
         
 
-That should take you to step c as below
+That should take you to step c as below. If for some reason, you have to re-run setup_darna.py, please delete folder 'Health_server' and rerun the command above.
 
 b) This starts docker containers  and also creates a folder data on your computer /home/darnahi/ that will serve as your external drive to store your files as part of Nextcloud instance.
  ##Important: If umbrel is running, the ports conflict. So ideal would be to use the native nextcloud app on umbrel
  
-c) Now go to your web browser at https://<your-ip-address>:8080 to complete the rest of installation. You could get your ip_address from $ifconfig. Follow instructions on your webpage. Remember to save your seed phrase in a text file.
+c) Now go to your web browser at "https://<your-ip-address>:8080: to complete the rest of installation. This step needs some patience as the initial step could be finicky. The main reason is to set it up so that you can access nextcloud on your computer from outside your home.
+  i) You could get your ip_address from $ifconfig. 
+  ii} Follow instructions on your webpage. 
+  iii) Remember to save your seed phrase in a text file.
  
 d) You should port forward 443 in your router. Steps are explained well by nextcloud. Login to your router. Usually instructions are at base of your router. Goto advanced settings and add port forward 443 (both TCP/UDP) to your device IP addr; Make sure you select 443 for bothe external and internal and save.
   
@@ -97,6 +100,9 @@ j) download your nextcloud app in ios or android, and enter your 'https://<your 
  
 ##Why nextcloud and not any cloud
  Nextcloud allows you to store your data on your computer even if you were remote and gives you more control. Technically any cloud works but that is your choice. Im tired of others reselling my data.
+ 
+ ##issue: if for some reason you have to re-run setup_darna.py, then delete the Health_server folder and rerun.
+ ## find your IP by going to terminal and entering $ifconfig
 
 Step 2: Download your health data in nextcloud from iphone
 =========================================================
