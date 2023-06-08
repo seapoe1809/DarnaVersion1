@@ -79,7 +79,7 @@ That should take you to step c as below. If for some reason, you have to re-run 
 b) This starts docker containers  and also creates a folder data on your computer /home/darnahi/ that will serve as your external drive to store your files as part of Nextcloud instance.
  ##Important: If umbrel is running, the ports conflict. So ideal would be to use the native nextcloud app on umbrel
  
-c) Now go to your web browser at "https://<your-ip-address>:8080: to complete the rest of installation. This step needs some patience as the initial step could be finicky. The main reason is to set it up so that you can access nextcloud on your computer from outside your home.
+c) Now go to your web browser at "https://your-ip-address:8080: to complete the rest of installation. This step needs some patience as the initial step could be finicky. The main reason is to set it up so that you can access nextcloud on your computer from outside your home.
   i) You could get your ip_address from $ifconfig. 
   ii} Follow instructions on your webpage. 
   iii) Remember to save your seed phrase in a text file.
@@ -94,9 +94,9 @@ g) It should then take you to next page where you choose the nextcloud modules y
   
 h) It should take almost 10 min to get it up and running, and finally will give you a username and password. eg. "admin" "asdnilsdfvblidfsvblisd98yy89y08ykjn". Save it in your password manager or a text file.
  
-i) Launch your desktop app at https://<your-sub-domain> (eg.https://nextcloud.darna.com and enter your username and pwd. 
+i) Launch your desktop app at https://your-sub-domain(eg.https://nextcloud.darna.com and enter your username and pwd. 
  
-j) download your nextcloud app in ios or android, and enter your 'https://<your sub domain>' which will prompt you for password and then you should be done!
+j) download your nextcloud app in ios or android, and enter your 'https://your-sub-domain' which will prompt you for password and then you should be done!
  
 ##Why nextcloud and not any cloud
  Nextcloud allows you to store your data on your computer even if you were remote and gives you more control. Technically any cloud works but that is your choice. Im tired of others reselling my data.
@@ -146,7 +146,7 @@ c) Scan PDF's: On nextcloud, choose the '+' menu in the lower center and make sc
                                pwd = <password_nextcloud> #usually a long string of alphanumerics
  
 
-
+Also if you have a summary PDF file, label it 'summary.pdf' and place it in static folder for the 'my health file' to autolink to.
  
  
  
