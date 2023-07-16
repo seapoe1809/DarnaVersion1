@@ -1,4 +1,5 @@
 # Darna
+##DARNA_LOCAL is DARNA v1.2 at 
 ##DARNA Healthy Intent v1.0- An open source intiative - self custody of your health data
 ##feel free to contribute
 ##Early stage. Beta and under development and isnt secure. Please take all steps to safeguard your data. 
