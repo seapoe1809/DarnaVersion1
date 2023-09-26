@@ -1,3 +1,4 @@
+###NOW DEPRECATED####   LATEST VERSION https://github.com/seapoe1809/Health_server
 # Darna
 ##DARNA_LOCAL is DARNA v1.2 at 
 ##DARNA Healthy Intent v1.0- An open source intiative - self custody of your health data
